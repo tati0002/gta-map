@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <style>
     html, body, #map {
-      height: 100%;
+      height: 100;
       margin: 0;
     }
   </style>
@@ -31,7 +31,8 @@
 
   const bounds = [[0,0], [mapHeight, mapWidth]];
 
- 
+const image = L.imageOverlay('https://static.gta-5-map.com/images/fullmap/map.jpg', bounds).addTo(map);
+  map.fitBounds(bounds);
 </script>
 
 </body>
